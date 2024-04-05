@@ -1,2 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+    position: relative;
+}
+
+body {
+    background-color: #D5C5C8;
+}
 
 
+footer {
+    background-color: #9E6671;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    p {
+        margin-bottom: 0rem;
+    }
+}
