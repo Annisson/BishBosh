@@ -1,8 +1,8 @@
 function UserInput()
 {
-    const bishInput = document.getElementById('formBishInput').value; // Save the user input
-    const boshInput = document.getElementById('formBoshInput').value;
-    const loopInput = document.getElementById('formLoopInput').value;
+    const bishInput = document.getElementById('formBishInput').value.trim(); // Save the user input and trim off any spaces
+    const boshInput = document.getElementById('formBoshInput').value.trim();
+    const loopInput = document.getElementById('formLoopInput').value.trim();
 
     const validInput = ValidateUserInput(bishInput, boshInput, loopInput); // Call the function to do a validation check
 
