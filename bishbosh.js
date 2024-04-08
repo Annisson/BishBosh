@@ -26,28 +26,29 @@ function ValidateUserInput(bishInput, boshInput, loopInput) // Validate user inp
 
 }
 
-function BishBosh(bish, bosh, loop)   // Add the function here for printing the result
+function BishBosh(bish, bosh, loop) 
 {
+    const resultOutput = document.getElementById('formResultOutput'); 
+    let result = '';
 
    for (let i = 1; i <= loop; i++) {
         if(i % bish === 0 && i % bosh === 0)
         {
-            console.log("Bish-Bosh");
+            result += 'Bish-Bosh';
         }
         else if(i % bish === 0)
         {
-            console.log("Bish");
+            result += 'Bish';
         }
         else if(i % bosh === 0)
         {
-            console.log("Bosh");
+            result += 'Bosh';
         }
         else
         {
-            console.log(i);
+            result += i;
         }
 
-
     } 
-    
+    resultOutput.textContent = result;  // Print result to id formResultOutput
 }
