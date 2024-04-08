@@ -19,11 +19,11 @@ function ValidateUserInput(bishInput, boshInput, loopInput) // Validate user inp
     if (!bishInput || isNaN(bishInput) || bishInput <= 0 || // Checks if a field is not filled out, NaN(not a numer), or is a negative number
     !boshInput || isNaN(boshInput) || boshInput <= 0 ||
     !loopInput || isNaN(loopInput) || loopInput <= 0) {
+        errorMessage.textContent = 'Please fill in all the fields with valid numbers.'; // Add message if user input is incorrect
         return false;
     }
-
+    
     return true;
-
 }
 
 function BishBosh(bish, bosh, loop) 

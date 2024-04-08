@@ -12,6 +12,10 @@ body {
     background-color: #D5C5C8;
 }
 
+#errorMessage {
+    color: #FF0000;
+}
+
 .btn-bd-primary {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-black);
