@@ -49,6 +49,9 @@ function BishBosh(bish, bosh, loop)
             result += i;
         }
 
+        if (i !== loop) { // Add a comma if it's not the last word/number
+            result += ', ';
+        }
     } 
-    resultOutput.textContent = result;  // Print result to id formResultOutput
+    resultOutput.textContent = result;  // Print result string in the p-tag with id "resultOutput"
 }
