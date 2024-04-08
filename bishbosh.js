@@ -56,8 +56,20 @@ function BishBosh(bish, bosh, loop)
     resultOutput.textContent = result;  // Print result string in the p-tag with id "resultOutput"
 }
 
+function ResetFields() { // Function to reset all the fields
+    document.getElementById('formBishInput').value = '';
+    document.getElementById('formBoshInput').value = '';
+    document.getElementById('formLoopInput').value = '';
+    document.getElementById('formResultOutput').textContent = '';
+    document.getElementById('errorMessage').textContent = '';
+}
+
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('startButton').addEventListener('click', UserInput); // Event listener for when the user clicks the Start-button
+
+    document.getElementById('resetButton').addEventListener('click', function() { // Event listener for when the user clicks the Reset-button
+        ResetFields();
+    });  // Call the ResetFields function to reset/clear all the fields
 });
