@@ -34,25 +34,38 @@
     }
 </script>
  -->
-<div class="d-flex p-5 bd-highlight flex-column justify-content-center container-sm">
+<div class="d-flex p-5 flex-column justify-content-center container-sm">
     <h1 class="pb-3">Bish-Bosh 2.0</h1>
     <p class="fs-5">This game will list all the numbers between 1 and your choosing from the input field below(loop). If the current number from the loop can be divided with either 
         or both numbers you have entered for Bish and Bosh below, it will replace that number with either Bish, Bosh or Bish-Bosh. For example if you enter 10 in the loop-field,
-        the program will run all the numbers between 1-10. If you chose 3 as Bish, and 4 as Bosh, it will print; 1, 2, Bish​, Bosh​, 5, Bish​, 7, Bosh​, Bish​, 10.
+        the program will run all the numbers between 1-10. If you chose 3 as Bish, and 4 as Bosh, it will print; 1, 2, Bish, Bosh, 5, Bish, 7, Bosh, Bish, 10.
     </p>
     <div class="mb-3 pt-4">
-        <label for="formBishInput" class="form-label">Number for Bish</label>
+        <label for="formBishInput" class="form-label p-1">Number for Bish</label>
         <input type="text" class="form-control" id="formBishInput" placeholder="Add a number here for Bish">
     </div>
     <div class="mb-3">
-        <label for="formBoshInput" class="form-label">Number for Bosh</label>
+        <label for="formBoshInput" class="form-label p-1">Number for Bosh</label>
         <input type="text" class="form-control" id="formBoshInput" placeholder="Add a number here for Bosh">
     </div>
     <div class="mb-3">
-        <label for="formLoopInput" class="form-label">How long will the loop run? (negative numbers are not allowed)</label>
+        <label for="formLoopInput" class="form-label p-1">How long will the loop run? (negative numbers are not allowed)</label>
         <input type="text" class="form-control" id="formLoopInput" placeholder="Add a number here for the loop">
     </div>
+    <div class="pt-2 pb-2">
+        <h5 class="p-1">Result:</h5>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text" id="formResultOutput"><p></p>
+            </div>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-block">
+        <button type="button" id="startButton" class="btn btn-bd-primary col-3">Start</button>
+    </div>
 </div>
+
+
 
 
 

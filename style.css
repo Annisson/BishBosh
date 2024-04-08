@@ -12,6 +12,14 @@ body {
     background-color: #D5C5C8;
 }
 
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-black);
+    --bs-btn-bg: #9E6671;
+    --bs-btn-hover-color: var(--bs-black);
+    --bs-btn-hover-bg: #DB7F8E;
+    --bs-btn-hover-border-color: var(--bs-black);
+  }
 
 footer {
     background-color: #9E6671;
