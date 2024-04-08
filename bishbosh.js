@@ -22,7 +22,7 @@ function ValidateUserInput(bishInput, boshInput, loopInput) // Validate user inp
         errorMessage.textContent = 'Please fill in all the fields with valid numbers.'; // Add message if user input is incorrect
         return false;
     }
-    
+
     return true;
 }
 
@@ -55,3 +55,9 @@ function BishBosh(bish, bosh, loop)
     } 
     resultOutput.textContent = result;  // Print result string in the p-tag with id "resultOutput"
 }
+
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('startButton').addEventListener('click', UserInput); // Event listener for when the user clicks the Start-button
+});
